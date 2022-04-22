@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="formStyle.css" type="text/css" />
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <div class="container">
+            <center>
+                <h1>User Registration</h1>
+            </center>
+            <center>
+                <p>Please fill the details For User registration</p>
+            </center>
+            <hr>
+
+            <label for="name"><b>Name: </b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+
+            <hr>
+
+            <label for="username"><b>Username: </b></label>
+            <input type="text" placeholder="Enter Your Userame @example Abhishek386" name="em" id="username" required>
+            <hr>
+            <label for="email"><b>Email: </b></label>
+            <input type="text" placeholder="Enter Your Email Id" name="email" id="email" required>
+            <hr>
+
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" placeholder="Enter Your Password" name="psw" id="psw" required>
+
+            <hr>
+
+            <label for="confirm-psw"><b>Confirm Password: </b></label>
+            <input type="password" placeholder="Enter Your Password Again" name="confirm-psw" id="confirm-psw" required>
+            <hr>
+
+            <label for="gender"><b>Gender</b></label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+
+            <hr>
+
+            <label for="Qualification"><b>Highest Education Qualification: </b></label>
+
+            <select name="Qualification" id="Qualification">
+                <option value="SSLC"><b>SSLC</b></option>
+                <option value="PU"><b>PU</b></option>
+                <option value="B.E"><b>B.E</b></option>
+                <option value="Mtech"><b>Mtech</b></option>
+            </select>
+
+            <hr>
+
+            <label for="address"><b>Current Address: </b></label>
+            <textarea name="address" id=address" cols="100" rows="5" value="address"></textarea>
+            <hr>
+
+            <div class="slidecontainer">
+                <h2>Skill Rating</h2>
+                <label for="Java"><b>Java: </b></label>
+                <input type="range" min="1" max="100" value="50" class="slider1" id="myRange1">
+                <hr>
+                <label for="php"><b>php: </b></label>
+                <input type="range" min="1" max="100" value="50" class="slider2" id="myRange2">
+                <hr>
+                <label for="python"><b>python: </b></label>
+                <input type="range" min="1" max="100" value="50" class="slider3" id="myRange3">
+
+                <hr>
+                <label><input type="checkbox" checked>: I Agree</label>
+
+                <center>
+                    <input type="submit" placeholder="Submit">
+                </center>
+                <script src="form.js"></script>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

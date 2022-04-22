@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row justify-content-center pt-5">
+
+            <button id="btn" class="btn btn-outline-dark btn-lg" style="color: aqua;" type="button" onclick="startQuiz()">Start Quiz</button>
+
+        </div>
+
+        <div class="row justify-content-center list-group m-2">
+            <div id="question-container"></div>
+        </div>
+        <div class="row justify-content-center list-group m-2">
+            <div id="choice-container"></div>
+        </div>
+        <div class="row justify-content-center m-2">
+            <div id="answer-container"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="card" id="result-container">
+            </div>
+        </div>
+
+        <div class="row justify-content-center m-2 p-2">
+            <div class="card" id="time-container">
+            </div>
+        </div>
+        <script src="Quiz.js"></script>
+        <p id="rules" style= "position: absolute; color: black; font-size: larger; font-weight: bolder;">
+            .This Quiz Game Contains 4 Questions and the Answers Will be Saved And the Result will be declared after answering all the four questions.
+            Note: You Can retake the Quiz. 
+        </p>
+    </div>
+</body>
+
+</html>

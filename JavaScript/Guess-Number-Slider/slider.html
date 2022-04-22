@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number using Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Guess The Correct Number</h1>
+        <br>
+        <h2 id="parent">Slide the button within range of 1-10</h2>
+        <button type="button" class="button" id="btn">1</button>
+        <button type="button" class="button" id="btn">2</button>
+        <button type="button" class="button" id="btn">3</button>
+        <button type="button" class="button" id="btn">4</button>
+        <button type="button" class="button" id="btn">5</button>
+        <button type="button" class="button" id="btn">6</button>
+        <button type="button" class="button" id="btn">7</button>
+        <button type="button" class="button" id="btn">8</button>
+        <button type="button" class="button" id="btn">9</button>
+        <button type="button" class="button" id="btn">10</button><br>
+        <input type="range" name="slider" class="range" id="slider" min="1" max="10" onchange = "numcheck()">
+
+        <script src=" slider.js"></script>
+    </div>
+</body>
+
+</html>
