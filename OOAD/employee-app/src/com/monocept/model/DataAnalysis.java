@@ -18,7 +18,7 @@ public class DataAnalysis {
 	public String findCeoOfCompany() throws IOException {
 		emp = reader.read();
 		for (Employee employee : emp) {
-			if (employee.getManagerId() == 0) {
+			if (employee.getManagerId() == null) {
 				return employee.emp.toString();
 			}
 		}

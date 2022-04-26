@@ -31,11 +31,11 @@ public class CSVFileReader implements IDataSource {
 					String id = check(empDetails[0]);
 					String name = check(empDetails[1]);
 					String job = check(empDetails[2]);
-					int mId = Integer.parseInt(check(empDetails[3]));
+					String mId = check(empDetails[3]);
 					String doj = check(empDetails[4]);
-					int salary = Integer.parseInt(check(empDetails[5]));
-					int commission = Integer.parseInt(check(empDetails[6]));
-					int deptNum = Integer.parseInt(check(empDetails[7]));
+					String salary = check(empDetails[5]);
+					String commission = check(empDetails[6]);
+					String deptNum = check(empDetails[7]);
 
 					Employee emp1 = new Employee(id, name, job, mId, doj, salary, commission, deptNum);
 					emp.add(emp1);

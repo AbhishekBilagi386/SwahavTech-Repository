@@ -7,14 +7,14 @@ public class Employee {
 	private String eId;
 	private String eName;
 	private String jobDept;
-	private int managerId;
+	private String managerId;
 	private String dateOfJoining;
-	private int salary;
-	private int commission;
-	private int deptnum;
+	private String salary;
+	private String commission;
+	private String deptnum;
 	Set<Employee> emp = new HashSet<Employee>();
 
-	public Employee(String id, String ename, String job, int mId, String doj, int sal, int commission, int deptnum) {
+	public Employee(String id, String ename, String job, String mId, String doj, String sal, String commission, String deptnum) {
 		this.eId = id;
 		this.eName = ename;
 		this.jobDept = job;
@@ -42,19 +42,19 @@ public class Employee {
 		return dateOfJoining;
 	}
 
-	public int getSal() {
+	public String getSal() {
 		return salary;
 	}
 
-	public int getCommission() {
+	public String getCommission() {
 		return commission;
 	}
 
-	public int getDeptnum() {
+	public String getDeptnum() {
 		return deptnum;
 	}
 
-	public int getManagerId() {
+	public String getManagerId() {
 		return managerId;
 	}
 
