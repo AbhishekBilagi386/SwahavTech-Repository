@@ -40,7 +40,7 @@ public class MovieControllerUI extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JFrame addframe = new JFrame("Movie Details");
+				JFrame addframe = new JFrame("Add Movie Frame");
 				JLabel nameField = new JLabel("Enter Movie name:");
 				JTextField nameInput = new JTextField(20);
 				addframe.add(nameField);
